@@ -13,7 +13,7 @@
           android:layout_height="fill_parent"/>
 
     
-    <ImageView 
+     <ImageView 
           android:id="@+id/mainMenuTitle"
           android:src="@drawable/title"
           android:adjustViewBounds="true"
@@ -26,8 +26,9 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" 
             android:orientation="vertical"
-            android:gravity="bottom"
+            android:gravity="center"
             android:id="@+id/mainSectionMenu">
+
         
         
         <ImageView 
@@ -50,8 +51,9 @@
             android:clickable="true" />
            
         
-     
-        <TextView 
+    </LinearLayout>
+
+    <TextView 
             android:layout_width="fill_parent" 
             android:layout_height="wrap_content" 
             android:ellipsize="marquee" 
@@ -66,7 +68,7 @@
             android:fadingEdgeLength="5dp" 
             android:focusable="false" 
             android:id="@+id/ticker"
+            android:gravity="bottom"
             android:singleLine="true" android:layout_gravity="bottom|left"/>
-    </LinearLayout>
-
+       
 </FrameLayout>

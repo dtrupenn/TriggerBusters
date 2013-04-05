@@ -27,7 +27,7 @@ public class MainMenuActivity extends Activity{
     private View.OnClickListener sStartButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
         	Log.d("Here", "Start touched");
-            if (!mPaused) {
+            if (mPaused) {
             	//Intent i = new Intent(getBaseContext(), DifficultyMenuActivity.class);
             	//i.putExtra("newGame", true);
                 v.startAnimation(mButtonFlickerAnimation);
@@ -42,7 +42,7 @@ public class MainMenuActivity extends Activity{
     private View.OnClickListener sOptionButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
         	Log.d("Here", "End touched");
-            if (!mPaused) {
+            if (mPaused) {
                 //Intent i = new Intent(getBaseContext(), SetPreferencesActivity.class);
 
                 v.startAnimation(mButtonFlickerAnimation);
