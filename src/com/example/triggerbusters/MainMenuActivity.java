@@ -16,6 +16,7 @@ public class MainMenuActivity extends Activity{
 	private boolean mPaused;
     private View mStartButton;
     private View mOptionsButton;
+    private View mHighScoreButton;
     private View mBackground;
     private View mTicker;
     private Animation mButtonFlickerAnimation;
@@ -55,6 +56,18 @@ public class MainMenuActivity extends Activity{
         }
     };
 	
+    private View.OnClickListener sHighScoreButtonListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            if (!mPaused) {
+                Intent i = new Intent(getBaseContext(), HighScoreActivity.class);
+
+                v.startAnimation(mButtonFlickerAnimation);
+                mButtonFlickerAnimation.setAnimationListener(new StartActivityAfterAnimation(i));
+                mPaused = true;
+            }
+        }
+    };
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -63,33 +76,38 @@ public class MainMenuActivity extends Activity{
 		mPaused = true;
 		mStartButton = findViewById(R.id.startButton);
 		mOptionsButton = findViewById(R.id.optionButton);
+		mHighScoreButton = findViewById(R.id.highScoreButton);
 		mBackground = findViewById(R.id.mainMenuBackground);
 		
+		if (mHighScoreButton != null) {
+			mHighScoreButton.setOnClickListener(sHighScoreButtonListener);
+		}
+
 		if (mOptionsButton != null) {
             mOptionsButton.setOnClickListener(sOptionButtonListener);
         }
-		
+
 		if (mStartButton != null) {
 			mStartButton.setOnClickListener(sStartButtonListener);
 		}
-		
+
 		mButtonFlickerAnimation = AnimationUtils.loadAnimation(this, R.anim.button_flicker);
         mFadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out);
         mAlternateFadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out);
         mFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
-		
+
 		mTicker = findViewById(R.id.ticker);
         if (mTicker != null) {
         	mTicker.setFocusable(true);
         	mTicker.requestFocus();
         	mTicker.setSelected(true);
         }
-        
+
         mJustCreated = true;
-        
+
         // Keep the volume control type consistent across all activities.
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        
+
         //MediaPlayer mp = MediaPlayer.create(this, R.raw.bwv_115);
         //mp.start();
 	}
