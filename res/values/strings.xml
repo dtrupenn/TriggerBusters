@@ -7,8 +7,22 @@
     
     <string name="health_fact">We should really find some cool healthfact here</string>
     
+    <!-- Preferences Values -->
     <string name="preference_game_settings">Game Settings</string>
     <string name="pref_enable_sound">Enable Sound</string>
     <string name="pref_enable_sound_summ">Disabling sound may improve performance on some devices.</string>
-
+    
+    <!-- High Score Value -->
+    <item name="score" type="integer">0</item>
+    <item name="score1" type="integer">0</item>
+    <item name="score2" type="integer">0</item>
+    <item name="score3" type="integer">0</item>
+    <item name="score4" type="integer">0</item>
+    <item name="score5" type="integer">0</item>
+    <item name="score6" type="integer">0</item>
+    <item name="score7" type="integer">0</item>
+    <item name="score8" type="integer">0</item>
+    <item name="score9" type="integer">0</item>
+    <string name="highScore">High Score:</string>
+    <string name="mainMenu">Main Menu</string>
 </resources>
