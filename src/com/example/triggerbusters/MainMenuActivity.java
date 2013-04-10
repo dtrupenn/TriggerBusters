@@ -1,5 +1,7 @@
 package com.example.triggerbusters;
 
+import java.lang.reflect.InvocationTargetException;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.AudioManager;
@@ -26,8 +28,7 @@ public class MainMenuActivity extends Activity{
     
     private View.OnClickListener sStartButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
-        	Log.d("Here", "Start touched");
-            if (mPaused) {
+            if (!mPaused) {
             	//Intent i = new Intent(getBaseContext(), DifficultyMenuActivity.class);
             	//i.putExtra("newGame", true);
                 v.startAnimation(mButtonFlickerAnimation);
@@ -41,12 +42,11 @@ public class MainMenuActivity extends Activity{
     
     private View.OnClickListener sOptionButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
-        	Log.d("Here", "End touched");
-            if (mPaused) {
-                //Intent i = new Intent(getBaseContext(), SetPreferencesActivity.class);
+            if (!mPaused) {
+                Intent i = new Intent(getBaseContext(), SetPreferencesActivity.class);
 
                 v.startAnimation(mButtonFlickerAnimation);
-               // mFadeOutAnimation.setAnimationListener(new StartActivityAfterAnimation(i));
+                mFadeOutAnimation.setAnimationListener(new StartActivityAfterAnimation(i));
                 mBackground.startAnimation(mFadeOutAnimation);
                 mStartButton.startAnimation(mAlternateFadeOutAnimation);
                 mTicker.startAnimation(mAlternateFadeOutAnimation);
@@ -100,6 +100,40 @@ public class MainMenuActivity extends Activity{
         mPaused = true;
     }
     
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mPaused = false;
+        
+        mButtonFlickerAnimation.setAnimationListener(null);
+        
+        if (mBackground != null) {
+        	mBackground.clearAnimation();
+        }
+        
+        if (mTicker != null) {
+        	mTicker.clearAnimation();
+        	mTicker.setAnimation(mFadeInAnimation);
+        }
+        
+        if (mJustCreated) {
+        	if (mStartButton != null) {
+                mStartButton.startAnimation(AnimationUtils.loadAnimation(this, R.anim.button_slide));
+            }
+            
+            if (mOptionsButton != null) {
+            	Animation anim = AnimationUtils.loadAnimation(this, R.anim.button_slide);
+                anim.setStartOffset(1000L);
+                mOptionsButton.startAnimation(anim);
+            }
+            mJustCreated = false;
+            
+        } else {
+        	mStartButton.clearAnimation();
+        	mOptionsButton.clearAnimation();
+        }
+    }
+    
     protected class StartActivityAfterAnimation implements Animation.AnimationListener {
         private Intent mIntent;
         
@@ -112,15 +146,15 @@ public class MainMenuActivity extends Activity{
         	
             startActivity(mIntent);      
             
-            /*if (UIConstants.mOverridePendingTransition != null) {
+            if (UIConstants.mOverridePendingTransition != null) {
 		       try {
 		    	   UIConstants.mOverridePendingTransition.invoke(MainMenuActivity.this, R.anim.activity_fade_in, R.anim.activity_fade_out);
 		       } catch (InvocationTargetException ite) {
-		           DebugLog.d("Activity Transition", "Invocation Target Exception");
+		           Log.d("Activity Transition", "Invocation Target Exception");
 		       } catch (IllegalAccessException ie) {
-		    	   DebugLog.d("Activity Transition", "Illegal Access Exception");
+		    	   Log.d("Activity Transition", "Illegal Access Exception");
 		       }
-            }*/
+            }
         }
 
         public void onAnimationRepeat(Animation animation) {

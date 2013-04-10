@@ -24,6 +24,10 @@
             </intent-filter>
         </activity>
         
+        <activity android:name="SetPreferencesActivity"
+                  android:screenOrientation="landscape" 
+                  android:configChanges="keyboardHidden|orientation" />
+        
     </application>
 
 </manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/preference_game_settings">
+        <CheckBoxPreference
+            android:key="enableSound"
+            android:title="@string/pref_enable_sound"
+            android:summary="@string/pref_enable_sound_summ"
+            android:defaultValue="true" 
+            android:persistent="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

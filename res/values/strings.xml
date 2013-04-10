@@ -6,5 +6,9 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     
     <string name="health_fact">We should really find some cool healthfact here</string>
+    
+    <string name="preference_game_settings">Game Settings</string>
+    <string name="pref_enable_sound">Enable Sound</string>
+    <string name="pref_enable_sound_summ">Disabling sound may improve performance on some devices.</string>
 
 </resources>

@@ -43,7 +43,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int buttonBarStyle=0x7f010000;
     }
     public static final class color {
-        public static final int black_overlay=0x7f050000;
+        public static final int black_overlay=0x7f060000;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -53,23 +53,26 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ui_button_start=0x7f020004;
     }
     public static final class id {
-        public static final int glsurfaceview=0x7f080000;
-        public static final int mainMenuBackground=0x7f080001;
-        public static final int mainMenuTitle=0x7f080002;
-        public static final int mainSectionMenu=0x7f080003;
-        public static final int optionButton=0x7f080005;
-        public static final int startButton=0x7f080004;
-        public static final int ticker=0x7f080006;
+        public static final int glsurfaceview=0x7f090000;
+        public static final int mainMenuBackground=0x7f090001;
+        public static final int mainMenuTitle=0x7f090002;
+        public static final int mainSectionMenu=0x7f090003;
+        public static final int optionButton=0x7f090005;
+        public static final int startButton=0x7f090004;
+        public static final int ticker=0x7f090006;
     }
     public static final class layout {
         public static final int main=0x7f030000;
         public static final int mainmenu=0x7f030001;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int dummy_button=0x7f060001;
-        public static final int dummy_content=0x7f060002;
-        public static final int health_fact=0x7f060003;
+        public static final int app_name=0x7f070000;
+        public static final int dummy_button=0x7f070001;
+        public static final int dummy_content=0x7f070002;
+        public static final int health_fact=0x7f070003;
+        public static final int pref_enable_sound=0x7f070005;
+        public static final int pref_enable_sound_summ=0x7f070006;
+        public static final int preference_game_settings=0x7f070004;
     }
     public static final class style {
         /** 
@@ -93,15 +96,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
-        public static final int ButtonBar=0x7f070003;
-        public static final int ButtonBarButton=0x7f070004;
-        public static final int FullscreenActionBarStyle=0x7f070005;
-        public static final int FullscreenTheme=0x7f070002;
+        public static final int AppTheme=0x7f080001;
+        public static final int ButtonBar=0x7f080003;
+        public static final int ButtonBarButton=0x7f080004;
+        public static final int FullscreenActionBarStyle=0x7f080005;
+        public static final int FullscreenTheme=0x7f080002;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f050000;
     }
     public static final class styleable {
         /** 
