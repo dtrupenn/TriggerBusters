@@ -42,11 +42,11 @@ public class Game {
 			 mRenderer = new GameRenderer(context, this, gameWidth, gameHeight);
 	    
 			 // Create core systems
-			 //BaseObject.sSystemRegistry.openGLSystem = new OpenGLSystem(null);
+			 /*BaseObject.sSystemRegistry.openGLSystem = new OpenGLSystem(null);
 
-			 //BaseObject.sSystemRegistry.customToastSystem = new CustomToastSystem(context);
+			 BaseObject.sSystemRegistry.customToastSystem = new CustomToastSystem(context);
 	            
-			 /*ContextParameters params = mContextParameters;
+			 ContextParameters params = mContextParameters;
 			 params.viewWidth = viewWidth;
 			 params.viewHeight = viewHeight;
 			 params.gameWidth = gameWidth;
@@ -316,7 +316,7 @@ public class Game {
 	 public void onSurfaceLost() {
 		 Log.d("Game", "Surface Lost");
 	        
-		 /*BaseObject.sSystemRegistry.shortTermTextureLibrary.invalidateAll();
+		/* BaseObject.sSystemRegistry.shortTermTextureLibrary.invalidateAll();
 		 BaseObject.sSystemRegistry.longTermTextureLibrary.invalidateAll();
 		 BaseObject.sSystemRegistry.bufferLibrary.invalidateHardwareBuffers();*/
 

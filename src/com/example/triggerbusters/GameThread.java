@@ -7,7 +7,7 @@ public class GameThread implements Runnable{
 	private long mLastTime;
     
     //private ObjectManager mGameRoot;
-    //private GameRenderer mRenderer;
+    private GameRenderer mRenderer;
     private Object mPauseLock;
     private boolean mFinished;
     private boolean mPaused = false;
@@ -16,13 +16,13 @@ public class GameThread implements Runnable{
     
     private static final float PROFILE_REPORT_DELAY = 3.0f;
     
-    /*public GameThread(GameRenderer renderer) {
+    public GameThread(GameRenderer renderer) {
         mLastTime = SystemClock.uptimeMillis();
         mRenderer = renderer;
         mPauseLock = new Object();
         mFinished = false;
         mPaused = false;
-    }*/
+    }
 
 	@Override
 	public void run() {
