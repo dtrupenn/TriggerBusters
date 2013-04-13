@@ -23,6 +23,8 @@ import android.widget.TextView;
 
 public class CoreGameActivity extends Activity implements SensorEventListener{
 	
+	public static final int VERSION = -100;
+	
 	public static final int QUIT_GAME_DIALOG = 0;
 	
 	private GLSurfaceView mGLSurfaceView;
