@@ -12,38 +12,36 @@
           android:layout_width="fill_parent"
           android:layout_height="fill_parent"/>
 
-    
-     <ImageView 
+    <ImageView 
           android:id="@+id/mainMenuTitle"
-          android:src="@drawable/title"
+          android:src="@drawable/title2"
           android:adjustViewBounds="true"
           android:layout_width="336dp" 
           android:layout_height="153dp" 
           android:layout_gravity="center_horizontal" 
           android:layout_marginTop="20dp"/>
+    
           
        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" 
             android:orientation="vertical"
-            android:gravity="center"
+            android:gravity="bottom"
             android:id="@+id/mainSectionMenu">
-
         
         
         <ImageView 
             android:id="@+id/startButton"
-            android:src="@drawable/ui_button_start"
+            android:src="@drawable/ui_button_strt"
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content" 
             android:layout_gravity="center_horizontal"
             android:clickable="true" />
             
-            
-            
+  
         <ImageView 
             android:id="@+id/optionButton"
-            android:src="@drawable/ui_button_options"
+            android:src="@drawable/ui_button_optns"
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content" 
             android:layout_gravity="center_horizontal"
@@ -52,16 +50,13 @@
         
         <ImageView 
             android:id="@+id/highScoreButton"
-            android:src="@drawable/ui_button_extras"
+            android:src="@drawable/ui_button_score"
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content" 
             android:layout_gravity="center_horizontal"
             android:paddingTop="10dp"
             android:clickable="true" />
-        
-    </LinearLayout>
-
-    <TextView 
+            <TextView 
             android:layout_width="fill_parent" 
             android:layout_height="wrap_content" 
             android:ellipsize="marquee" 
@@ -76,7 +71,8 @@
             android:fadingEdgeLength="5dp" 
             android:focusable="false" 
             android:id="@+id/ticker"
-            android:gravity="bottom"
             android:singleLine="true" android:layout_gravity="bottom|left"/>
+        
+    </LinearLayout>
        
 </FrameLayout>

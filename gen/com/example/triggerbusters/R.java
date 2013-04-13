@@ -48,10 +48,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
         public static final int title=0x7f020001;
-        public static final int title_background=0x7f020002;
-        public static final int ui_button_extras=0x7f020003;
-        public static final int ui_button_options=0x7f020004;
-        public static final int ui_button_start=0x7f020005;
+        public static final int title2=0x7f020002;
+        public static final int title_background=0x7f020003;
+        public static final int ui_button_extras=0x7f020004;
+        public static final int ui_button_options=0x7f020005;
+        public static final int ui_button_optns=0x7f020006;
+        public static final int ui_button_score=0x7f020007;
+        public static final int ui_button_start=0x7f020008;
+        public static final int ui_button_strt=0x7f020009;
     }
     public static final class id {
         public static final int counter=0x7f0a000a;
@@ -86,7 +90,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ticker=0x7f0a0007;
     }
     public static final class integer {
-        /**  High Score Value 
+        /**  High Score Values 
          */
         public static final int score=0x7f080000;
         public static final int score1=0x7f080001;
@@ -116,6 +120,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  Preferences Values 
          */
         public static final int preference_game_settings=0x7f070004;
+        public static final int quit_game_dialog_cancel=0x7f07000b;
+        public static final int quit_game_dialog_message=0x7f07000c;
+        public static final int quit_game_dialog_ok=0x7f07000a;
+        /**  Quit Game Values 
+         */
+        public static final int quit_game_dialog_title=0x7f070009;
     }
     public static final class style {
         /** 

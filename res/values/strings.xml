@@ -12,7 +12,7 @@
     <string name="pref_enable_sound">Enable Sound</string>
     <string name="pref_enable_sound_summ">Disabling sound may improve performance on some devices.</string>
     
-    <!-- High Score Value -->
+    <!-- High Score Values -->
     <item name="score" type="integer">0</item>
     <item name="score1" type="integer">0</item>
     <item name="score2" type="integer">0</item>
@@ -25,4 +25,10 @@
     <item name="score9" type="integer">0</item>
     <string name="highScore">High Score:</string>
     <string name="mainMenu">Main Menu</string>
+    
+    <!-- Quit Game Values -->
+    <string name="quit_game_dialog_title">Quit Game?</string>
+    <string name="quit_game_dialog_ok">Quit</string>
+    <string name="quit_game_dialog_cancel">Cancel</string>
+    <string name="quit_game_dialog_message">Return to main menu?</string>
 </resources>
