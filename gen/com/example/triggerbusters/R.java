@@ -43,89 +43,165 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int buttonBarStyle=0x7f010000;
     }
     public static final class color {
-        public static final int black_overlay=0x7f060000;
+        public static final int black_overlay=0x7f070000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int title=0x7f020001;
-        public static final int title2=0x7f020002;
-        public static final int title_background=0x7f020003;
-        public static final int ui_button_extras=0x7f020004;
-        public static final int ui_button_options=0x7f020005;
-        public static final int ui_button_optns=0x7f020006;
-        public static final int ui_button_score=0x7f020007;
-        public static final int ui_button_start=0x7f020008;
-        public static final int ui_button_strt=0x7f020009;
+        public static final int boy_down=0x7f020000;
+        public static final int boy_left=0x7f020001;
+        public static final int boy_right=0x7f020002;
+        public static final int boy_up=0x7f020003;
+        public static final int brick=0x7f020004;
+        public static final int cat=0x7f020005;
+        public static final int cigarette=0x7f020006;
+        public static final int cockroach=0x7f020007;
+        public static final int custom_toast_border=0x7f020008;
+        public static final int dust=0x7f020009;
+        public static final int frontpage=0x7f02000a;
+        public static final int girl_down=0x7f02000b;
+        public static final int girl_left=0x7f02000c;
+        public static final int girl_right=0x7f02000d;
+        public static final int girl_up=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int inhaler=0x7f020010;
+        public static final int instructionsa=0x7f020011;
+        public static final int instructionsb=0x7f020012;
+        public static final int instructionsscrollable=0x7f020013;
+        public static final int meter=0x7f020014;
+        public static final int meterfull=0x7f020015;
+        public static final int meterone=0x7f020016;
+        public static final int meterthree=0x7f020017;
+        public static final int metertwo=0x7f020018;
+        public static final int mold=0x7f020019;
+        public static final int sidewalk=0x7f02001a;
+        public static final int title=0x7f02001b;
+        public static final int title2=0x7f02001c;
+        public static final int title_background=0x7f02001d;
+        public static final int tree=0x7f02001e;
+        public static final int ui_button_baby=0x7f02001f;
+        public static final int ui_button_extras=0x7f020020;
+        public static final int ui_button_kids=0x7f020021;
+        public static final int ui_button_options=0x7f020022;
+        public static final int ui_button_optns=0x7f020023;
+        public static final int ui_button_score=0x7f020024;
+        public static final int ui_button_start=0x7f020025;
+        public static final int ui_button_strt=0x7f020026;
     }
     public static final class id {
-        public static final int counter=0x7f0a000a;
-        public static final int counter1=0x7f0a000c;
-        public static final int counter2=0x7f0a000e;
-        public static final int counter3=0x7f0a0010;
-        public static final int counter4=0x7f0a0012;
-        public static final int counter5=0x7f0a0014;
-        public static final int counter6=0x7f0a0016;
-        public static final int counter7=0x7f0a0018;
-        public static final int counter8=0x7f0a001a;
-        public static final int counter9=0x7f0a001c;
-        public static final int glsurfaceview=0x7f0a0000;
-        public static final int highScoreButton=0x7f0a0006;
-        public static final int mainMenuBackground=0x7f0a0001;
-        public static final int mainMenuTitle=0x7f0a0002;
-        public static final int mainSectionMenu=0x7f0a0003;
-        public static final int optionButton=0x7f0a0005;
-        public static final int startButton=0x7f0a0004;
-        public static final int submitbutton=0x7f0a001d;
-        public static final int tableLayout1=0x7f0a0008;
-        public static final int tableRow0=0x7f0a0009;
-        public static final int tableRow1=0x7f0a000b;
-        public static final int tableRow2=0x7f0a000d;
-        public static final int tableRow3=0x7f0a000f;
-        public static final int tableRow4=0x7f0a0011;
-        public static final int tableRow5=0x7f0a0013;
-        public static final int tableRow6=0x7f0a0015;
-        public static final int tableRow7=0x7f0a0017;
-        public static final int tableRow8=0x7f0a0019;
-        public static final int tableRow9=0x7f0a001b;
-        public static final int ticker=0x7f0a0007;
+        public static final int OriginalButton=0x7f0b0003;
+        public static final int RegularButton=0x7f0b0001;
+        public static final int counter=0x7f0b0012;
+        public static final int counter1=0x7f0b0014;
+        public static final int counter2=0x7f0b0016;
+        public static final int counter3=0x7f0b0018;
+        public static final int counter4=0x7f0b001a;
+        public static final int counter5=0x7f0b001c;
+        public static final int counter6=0x7f0b001e;
+        public static final int counter7=0x7f0b0020;
+        public static final int counter8=0x7f0b0022;
+        public static final int counter9=0x7f0b0024;
+        public static final int glsurfaceview=0x7f0b0007;
+        public static final int gridview1=0x7f0b0005;
+        public static final int highScoreButton=0x7f0b000c;
+        public static final int mainMenuBackground=0x7f0b0000;
+        public static final int mainMenuTitle=0x7f0b0008;
+        public static final int mainSectionMenu=0x7f0b0009;
+        public static final int optionButton=0x7f0b000b;
+        public static final int originalText=0x7f0b0004;
+        public static final int pausebutton=0x7f0b0006;
+        public static final int pregameview1=0x7f0b000e;
+        public static final int regularText=0x7f0b0002;
+        public static final int rulesview1=0x7f0b000f;
+        public static final int startButton=0x7f0b000a;
+        public static final int submitbutton=0x7f0b0025;
+        public static final int tableLayout1=0x7f0b0010;
+        public static final int tableRow0=0x7f0b0011;
+        public static final int tableRow1=0x7f0b0013;
+        public static final int tableRow2=0x7f0b0015;
+        public static final int tableRow3=0x7f0b0017;
+        public static final int tableRow4=0x7f0b0019;
+        public static final int tableRow5=0x7f0b001b;
+        public static final int tableRow6=0x7f0b001d;
+        public static final int tableRow7=0x7f0b001f;
+        public static final int tableRow8=0x7f0b0021;
+        public static final int tableRow9=0x7f0b0023;
+        public static final int ticker=0x7f0b000d;
     }
     public static final class integer {
         /**  High Score Values 
          */
-        public static final int score=0x7f080000;
-        public static final int score1=0x7f080001;
-        public static final int score2=0x7f080002;
-        public static final int score3=0x7f080003;
-        public static final int score4=0x7f080004;
-        public static final int score5=0x7f080005;
-        public static final int score6=0x7f080006;
-        public static final int score7=0x7f080007;
-        public static final int score8=0x7f080008;
-        public static final int score9=0x7f080009;
+        public static final int score=0x7f090000;
+        public static final int score1=0x7f090001;
+        public static final int score2=0x7f090002;
+        public static final int score3=0x7f090003;
+        public static final int score4=0x7f090004;
+        public static final int score5=0x7f090005;
+        public static final int score6=0x7f090006;
+        public static final int score7=0x7f090007;
+        public static final int score8=0x7f090008;
+        public static final int score9=0x7f090009;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int mainmenu=0x7f030001;
-        public static final int score=0x7f030002;
+        public static final int game_type_menu=0x7f030000;
+        public static final int grid=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int mainmenu=0x7f030003;
+        public static final int prescreen=0x7f030004;
+        public static final int rules=0x7f030005;
+        public static final int score=0x7f030006;
+    }
+    public static final class raw {
+        public static final int beatbox=0x7f060000;
+        public static final int buzzer=0x7f060001;
+        public static final int explosion=0x7f060002;
+        public static final int powerup=0x7f060003;
+        public static final int suck=0x7f060004;
     }
     public static final class string {
-        public static final int app_name=0x7f070000;
-        public static final int dummy_button=0x7f070001;
-        public static final int dummy_content=0x7f070002;
-        public static final int health_fact=0x7f070003;
-        public static final int highScore=0x7f070007;
-        public static final int mainMenu=0x7f070008;
-        public static final int pref_enable_sound=0x7f070005;
-        public static final int pref_enable_sound_summ=0x7f070006;
+        public static final int DisplayRules=0x7f080019;
+        public static final int Down=0x7f080010;
+        public static final int Left=0x7f080011;
+        public static final int Pause=0x7f080013;
+        public static final int Right=0x7f080012;
+        /**  Original Game Values 
+         */
+        public static final int Up=0x7f08000f;
+        public static final int app_name=0x7f080000;
+        public static final int collision_message=0x7f08001a;
+        public static final int collision_message2=0x7f080021;
+        public static final int collision_message_cockroach=0x7f08001d;
+        public static final int collision_message_mold=0x7f08001c;
+        public static final int collision_message_pet=0x7f08001b;
+        public static final int collision_message_smoke=0x7f080020;
+        public static final int collision_message_smoke2=0x7f08001e;
+        public static final int collision_message_smoke3=0x7f08001f;
+        public static final int dummy_button=0x7f080001;
+        public static final int dummy_content=0x7f080002;
+        public static final int health_fact=0x7f080003;
+        public static final int highScore=0x7f080009;
+        public static final int inhaler_message1=0x7f080023;
+        public static final int inhaler_message2=0x7f080024;
+        public static final int joystick=0x7f080014;
+        public static final int mainMenu=0x7f08000a;
+        public static final int menu_rules=0x7f080018;
+        public static final int menu_settings=0x7f080015;
+        public static final int ok=0x7f080022;
+        public static final int original_description=0x7f080008;
+        public static final int pref_enable_sound=0x7f080005;
+        public static final int pref_enable_sound_summ=0x7f080006;
+        public static final int pref_sound=0x7f080016;
+        public static final int pref_sound_summ=0x7f080017;
         /**  Preferences Values 
          */
-        public static final int preference_game_settings=0x7f070004;
-        public static final int quit_game_dialog_cancel=0x7f07000b;
-        public static final int quit_game_dialog_message=0x7f07000c;
-        public static final int quit_game_dialog_ok=0x7f07000a;
+        public static final int preference_game_settings=0x7f080004;
+        public static final int quit_game_dialog_cancel=0x7f08000d;
+        public static final int quit_game_dialog_message=0x7f08000e;
+        public static final int quit_game_dialog_ok=0x7f08000c;
         /**  Quit Game Values 
          */
-        public static final int quit_game_dialog_title=0x7f070009;
+        public static final int quit_game_dialog_title=0x7f08000b;
+        /**  GameType Values 
+         */
+        public static final int regular_description=0x7f080007;
     }
     public static final class style {
         /** 
@@ -149,15 +225,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090001;
-        public static final int ButtonBar=0x7f090003;
-        public static final int ButtonBarButton=0x7f090004;
-        public static final int FullscreenActionBarStyle=0x7f090005;
-        public static final int FullscreenTheme=0x7f090002;
+        public static final int AppTheme=0x7f0a0001;
+        public static final int ButtonBar=0x7f0a0003;
+        public static final int ButtonBarButton=0x7f0a0004;
+        public static final int FullscreenActionBarStyle=0x7f0a0005;
+        public static final int FullscreenTheme=0x7f0a0002;
     }
     public static final class xml {
         public static final int preferences=0x7f050000;

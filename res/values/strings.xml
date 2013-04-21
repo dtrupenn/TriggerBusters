@@ -12,6 +12,10 @@
     <string name="pref_enable_sound">Enable Sound</string>
     <string name="pref_enable_sound_summ">Disabling sound may improve performance on some devices.</string>
     
+    <!-- GameType Values -->
+    <string name="regular_description">A 2D Side Scrolling Adventure!</string>
+    <string name="original_description">A Retro Pacman-like Experience</string>
+    
     <!-- High Score Values -->
     <item name="score" type="integer">0</item>
     <item name="score1" type="integer">0</item>
@@ -31,4 +35,35 @@
     <string name="quit_game_dialog_ok">Quit</string>
     <string name="quit_game_dialog_cancel">Cancel</string>
     <string name="quit_game_dialog_message">Return to main menu?</string>
+    
+    <!-- Original Game Values -->
+    <string name="Up">U</string>
+    <string name="Down">D</string>
+    <string name="Left">L</string>
+    <string name="Right">R</string>
+    <string name="Pause">Pause</string>
+    <string name="joystick">joystick</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pref_sound">Sound</string>
+    <string name="pref_sound_summ">To turn off sound please uncheck the box</string>
+    <string name="menu_rules">Rules</string>
+    <string name="DisplayRules">The city is filled with dust and it\'s your job to clean it all up!
+Use the arrow keys to move around the city and pick up the dust pieces along the way.
+Watch out for the asthma triggers though. The pet, mold, cockroach, and cigarette will chase you all around the board.
+You start with two inhalers and one nebulizer. Every time you get hit by a trigger, you need to take a puff.
+After two inhaler puffs, if you get hit, it\'s time to use the nebulizer.
+One more hit after you use your nebulizer means a game over so be careful!
+See if you can beat your high score!
+Good luck!!!</string>
+    
+    <string name="collision_message">You have been hit! Remember to avoid triggers to avoid asthma flares!</string>
+    <string name="collision_message_pet">You have been hit by a cat! Remember to keep your pet out of your bedroom! </string>
+    <string name="collision_message_mold">You have been hit by mold! Be sure to check your leaking pipes! </string>
+    <string name="collision_message_cockroach">You have been hit by a cockroach! Get a cockroach trap and ask them to check into the roach motel! </string>
+    <string name="collision_message_smoke2">You have been hit by smoke! Don\'t let people smoke around you!</string>
+    <string name="collision_message_smoke3">You have been hit by smoke! Don\'t let people smoke in your car!</string>
+    <string name="collision_message_smoke">You have been hit by smoke! Don\'t let people smoke in your house!</string>
+    <string name="collision_message2">You have been hit! Because you have used your inhaler twice, it\'s time for the nebulizer.</string><string name="ok">OK</string>
+    <string name="inhaler_message1">Take your daily medicine so you can go enjoy your day!</string>
+    <string name="inhaler_message2">Now that you have taken your daily medicine you can begin the game!</string>
 </resources>

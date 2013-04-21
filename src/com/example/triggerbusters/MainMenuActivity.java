@@ -30,10 +30,10 @@ public class MainMenuActivity extends Activity{
     private View.OnClickListener sStartButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
             if (!mPaused) {
-            	//Intent i = new Intent(getBaseContext(), DifficultyMenuActivity.class);
-            	//i.putExtra("newGame", true);
+            	Intent i = new Intent(getBaseContext(), TypeMenuActivity.class);
+            	i.putExtra("newGame", true);
                 v.startAnimation(mButtonFlickerAnimation);
-                //mButtonFlickerAnimation.setAnimationListener(new StartActivityAfterAnimation(i));
+                mButtonFlickerAnimation.setAnimationListener(new StartActivityAfterAnimation(i));
 
                 mPaused = true;
             }

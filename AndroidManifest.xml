@@ -32,6 +32,43 @@
                   android:screenOrientation="landscape" 
                   android:configChanges="keyboardHidden|orientation" />
         
+        <activity android:name="TypeMenuActivity"
+                  android:screenOrientation="landscape" 
+                  android:configChanges="keyboardHidden|orientation" />
+        
+        <activity
+            android:name="PreScreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="GamePlay"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="AsthmaGameActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+             android:name="RulesPage"
+             android:screenOrientation="portrait"
+             android:label="@string/app_name" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+             </intent-filter>
+        </activity>
+        
     </application>
 
 </manifest>
