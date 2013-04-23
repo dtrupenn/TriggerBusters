@@ -20,13 +20,13 @@
             android:layout_gravity="center" 
             android:padding="10dp">
             
-        <ImageView 
+        <ImageView
             android:id="@+id/RegularButton"
-            android:src="@drawable/ui_button_baby"
-            android:layout_width="wrap_content" 
-            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:clickable="true" /> 
+            android:clickable="true"
+            android:src="@drawable/ui_button_normal" />
             
         <TextView 
             android:layout_width="wrap_content" 
@@ -40,7 +40,7 @@
          
         <ImageView 
             android:id="@+id/OriginalButton"
-            android:src="@drawable/ui_button_kids"
+            android:src="@drawable/ui_button_original"
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content" 
             android:layout_gravity="center_horizontal"
