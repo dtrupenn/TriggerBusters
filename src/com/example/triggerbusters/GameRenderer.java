@@ -35,7 +35,7 @@ public class GameRenderer {//implements  GLSurfaceView.Renderer {
     private long mProfileSubmitTime;
     private int mProfileObjectCount;
     
-    //private ObjectManager mDrawQueue;
+    private ObjectManager mDrawQueue;
     private boolean mDrawQueueChanged;
     private Game mGame;
     private Object mDrawLock;

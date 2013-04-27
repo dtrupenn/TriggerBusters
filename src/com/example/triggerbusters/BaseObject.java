@@ -6,7 +6,7 @@ package com.example.triggerbusters;
  * BaseObject.  BaseObject also defines the interface for the object-wide system registry.
  */
 
-public abstract class BaseObject extends AllocationGuard{
+public abstract class BaseObject extends AllocationGuard {
 
 	static ObjectRegistery sSystemRegistry = new ObjectRegistery();
 
