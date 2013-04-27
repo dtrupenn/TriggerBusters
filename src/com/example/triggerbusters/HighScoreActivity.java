@@ -14,7 +14,7 @@ public class HighScoreActivity extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.score);
+		setContentView(R.layout.high_score);
 		update();
 	}
 
