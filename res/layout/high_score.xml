@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highScore"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score4"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score5"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score6"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score7"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score8"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/counter9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@integer/score9"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+      <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMainMenuScreenClick"
+        android:text="@string/mainMenu" />
+
+</TableLayout>

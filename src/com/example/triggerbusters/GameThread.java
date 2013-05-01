@@ -6,7 +6,7 @@ public class GameThread implements Runnable{
 	
 	private long mLastTime;
     
-    //private ObjectManager mGameRoot;
+    private ObjectManager mGameRoot;
     private GameRenderer mRenderer;
     private Object mPauseLock;
     private boolean mFinished;
@@ -55,8 +55,8 @@ public class GameThread implements Runnable{
         return mPaused;
     }
 
-    /*public void setGameRoot(ObjectManager gameRoot) {
+    public void setGameRoot(ObjectManager gameRoot) {
         mGameRoot = gameRoot;
-    }*/
+    }
 
 }
